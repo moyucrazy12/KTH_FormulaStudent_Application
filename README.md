@@ -1,8 +1,6 @@
-# KTH_FormulaStudent_Application
-
 # KTH Formula Student Driverless Application
 
-This repository contains the implementation and instructions for the **KTH Formula Student Driverless Team** application. It includes workflows for **Exercise 1** and **Exercise 2** using ROS Melodic and ROS2 Humble.  
+This repository contains the implementation and instructions for the **KTH Formula Student Driverless Team** application. It includes workflows for **Exercise 1** (ROS Melodic and ROS2 Humble) and **Exercise 2**.  
 
 > Note: A ROS2 Humble Docker image is provided due to its active community support and compatibility with modern libraries.
 
@@ -16,7 +14,7 @@ This repository contains the implementation and instructions for the **KTH Formu
 
 ```bash
 cd exercise1_melodic
-
+```
     Pull the Docker image:
 
 docker pull kthfsdv/ros-intro
