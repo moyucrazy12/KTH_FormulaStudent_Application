@@ -151,11 +151,19 @@ Graphical representation:
 ```bash
 rqt_graph
 ```
+
+![RQT](./images_KTHFS/rosgraph.png)
+
+*RQT Graph Output*
+
 Use PlotJuggler:
 ```bash
 ros2 launch plotjuggler plotjuggler
 ```
  - Start recording topics
+![PLOTJUGGLER](./images_KTHFS/plotjuggler.png)
+
+*PlotJuggler Output*
 
 ## Exercise 2
 
@@ -180,13 +188,14 @@ To run this code, dowload the folder _exercise2_ and do the following inside the
 ```bash
 python3 KTHFS_Visualization.py
 ```
+![EXERCISE2](./images_KTHFS/exercise2.png)
 
+*Exercise 2 Visualization*
 
 > Docker Images
 
-ROS Melodic: kthfsdv/ros-intro
-
-ROS2 Humble: Custom image for modern ROS2 workflows
+- ROS Melodic: kthfsdv/ros-intro
+- ROS2 Humble: Custom image for modern ROS2 workflows
 
 
 
