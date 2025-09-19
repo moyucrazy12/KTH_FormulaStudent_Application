@@ -10,36 +10,39 @@ This repository contains the implementation and instructions for the **KTH Formu
 
 ### Setup
 
-1. Navigate to the Melodic version folder:
+Navigate to the Melodic version folder:
 
-    ```bash
-    cd exercise1_melodic
-    ```
-    Pull the Docker image:
+```bash
+cd exercise1_melodic
+```
+Pull the Docker image:
 
-    ```bash
-    docker pull kthfsdv/ros-intro
-    ```
-    Run the Docker container:
+```bash
+docker pull kthfsdv/ros-intro
+```
+Run the Docker container:
 
+```bash
 docker run -it \
   --mount type=bind,source="$(pwd)",target=/src \
   --env="DISPLAY=$DISPLAY" \
   --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
   kthfsdv/ros-intro
+```
 
-    Note: The DISPLAY environment variable is set to fix GUI issues in Docker.
+> Note: The DISPLAY environment variable is set to fix GUI issues in Docker.
 
 Running ROS Nodes
-Start roscore
 
 In the first terminal:
-
+```bash
 roscore
+```
 
 Identify Docker container
-
+```bash
 docker ps
+```
 
 Option 1: Run nodes in separate terminals
 
