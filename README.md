@@ -37,7 +37,7 @@ Running ROS Nodes
 In the first terminal:
 ```bash
 roscore
-```
+
 
 Identify Docker container
 ```bash
