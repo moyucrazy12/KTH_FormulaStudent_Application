@@ -188,6 +188,8 @@ ROS2 Humble: Custom image for modern ROS2 workflows
 
 ROS2 Humble is recommended for modern libraries, trending tools, and active community support.
 
+[Cristhian Kevin Mallqui Castro]
+
 Both exercises support single-terminal launch with launch files.
 
 Visualization can be done via rqt_graph or PlotJuggler.
