@@ -15,10 +15,11 @@ This repository contains the implementation and instructions for the **KTH Formu
 ```bash
 cd exercise1_melodic
 ```
-    Pull the Docker image:
+Pull the Docker image:
 
+```bash
 docker pull kthfsdv/ros-intro
-
+```
     Run the Docker container:
 
 docker run -it \
