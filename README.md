@@ -86,6 +86,7 @@ Verify Topics
 In a separate terminal:
 ```bash
 docker exec -it <container_name> /bin/bash
+```
 Inside the container
 ```bash
 source /ros_entrypoint.sh
@@ -96,56 +97,63 @@ or
 ```bash
 rostopic echo /kthfs/result
 ```
-Exercise 1: ROS2 Humble
+## Exercise 1: ROS2 Humble
 
 Due to the limited support for ROS Melodic and the popularity of ROS2 Humble, this repository includes a Docker image with ROS2 Humble.
 Recommended Setup
 
-    Open the folder in Visual Studio Code
+    - Download and open the folder exercise1_humble in Visual Studio Code
 
-    Install the Docker Dev Containers extension
+    - Install the Docker Dev Containers extension
 
-    Configure devcontainer.json for desired paths
+    - Configure devcontainer.json for desired paths
 
-    Build and start the container
+    - Build and start the container
 
 Running ROS2 Nodes
 
 First terminal:
-
+```bash
 cd kth_ws
 source install/setup.bash
 ros2 run package1 nodeA
+```
 
 Second terminal:
-
+```bash
 cd kth_ws
 source install/setup.bash
 ros2 run package2 nodeB
+```
 
 Launch File Alternative
 
 Instead of using two terminals, run all nodes:
-
+```bash
+cd kth_ws
+source install/setup.bash
 ros2 launch package1 exercise.launch.py
+```
 
 Visualization
 
-    Check topics:
-
+Check topics:
+```bash
 ros2 topic list
 ros2 topic echo /kthfs/result
+```
 
-    Graphical representation:
-
+Graphical representation:
+```bash
 rqt_graph
-
-    Use PlotJuggler:
-
+```
+Use PlotJuggler:
+```bash
 ros2 launch plotjuggler plotjuggler
-# Start recording topics
+```
+ - Start recording topics
 
-Exercise 2
+## Exercise 2
 
 This exercise implements a real-time signal processing and visualization tool with the following features:
 
