@@ -37,7 +37,7 @@ Running ROS Nodes
 In the first terminal:
 ```bash
 roscore
-
+```
 
 Identify Docker container
 ```bash
@@ -47,40 +47,55 @@ docker ps
 Option 1: Run nodes in separate terminals
 
 Second terminal:
-
+```bash
 docker exec -it <container_name> /bin/bash
+```
+Inside the container
+```bash
 source /ros_entrypoint.sh
 cd kthfs
 source devel/setup.bash
 rosrun package1 nodeA.py
-
+```
 Third terminal:
-
+```bash
 docker exec -it <container_name> /bin/bash
+```
+Inside the container
+```bash
 source /ros_entrypoint.sh
 cd kthfs
 source devel/setup.bash
 rosrun package2 nodeB.py
+```
 
 Option 2: Run all nodes with a launch file
-
+```bash
 docker exec -it <container_name> /bin/bash
+```
+Inside the container
+```bash
 source /ros_entrypoint.sh
 cd kthfs
 source devel/setup.bash
 roslaunch package1 all_nodes.py
+```
 
 Verify Topics
 
 In a separate terminal:
-
+```bash
 docker exec -it <container_name> /bin/bash
+Inside the container
+```bash
 source /ros_entrypoint.sh
 rostopic list
 rostopic echo /mallqui
-# or
+```
+or
+```bash
 rostopic echo /kthfs/result
-
+```
 Exercise 1: ROS2 Humble
 
 Due to the limited support for ROS Melodic and the popularity of ROS2 Humble, this repository includes a Docker image with ROS2 Humble.
