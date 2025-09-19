@@ -157,30 +157,37 @@ ros2 launch plotjuggler plotjuggler
 
 This exercise implements a real-time signal processing and visualization tool with the following features:
 
-    Signal: h(t) = 3 * pi * exp(-lambda(t)), lambda(t)=5*sin(2*pi*1*t)
+- Signal: h(t) = 3 * pi * exp(-lambda(t)), lambda(t)=5*sin(2*pi*1*t)
 
-    Real-time sampling (system clock) and prerecorded playback (CSV with time_s, value)
+- Real-time sampling (system clock) and prerecorded playback (CSV with time_s, value)
 
-    Controls: Start/Stop/Reset, Pause/Resume (Space), Save CSV (S), Load CSV (L), Export TikZ (T)
+- Controls: Start/Stop/Reset, Pause/Resume (Space), Save CSV (S), Load CSV (L), Export TikZ (T)
 
-    Zoom slider (window width), Grid toggle, Follow mode
+- Zoom slider (window width), Grid toggle, Follow mode
 
-    Experiment name entry, Save CSV with metadata
+- Experiment name entry, Save CSV with metadata
 
-    Export TikZ/PGFPlots code to .tex for LaTeX integration
+- Export TikZ/PGFPlots code to .tex for LaTeX integration
 
-    See the screenshot of the interface in the repository.
+- See the screenshot of the interface in the repository.
 
-Docker Images
+To run this code, dowload the folder _exercise2_ and do the following inside the folder:
 
-    ROS Melodic: kthfsdv/ros-intro
+```bash
+python3 KTHFS_Visualization.py
+```
 
-    ROS2 Humble: Custom image for modern ROS2 workflows
 
-Notes
+> Docker Images
 
-    ROS2 Humble is recommended for modern libraries, trending tools, and active community support.
+ROS Melodic: kthfsdv/ros-intro
 
-    Both exercises support single-terminal launch with launch files.
+ROS2 Humble: Custom image for modern ROS2 workflows
 
-    Visualization can be done via rqt_graph or PlotJuggler.
+> Notes
+
+ROS2 Humble is recommended for modern libraries, trending tools, and active community support.
+
+Both exercises support single-terminal launch with launch files.
+
+Visualization can be done via rqt_graph or PlotJuggler.
