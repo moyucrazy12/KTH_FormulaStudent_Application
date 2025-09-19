@@ -12,14 +12,14 @@ This repository contains the implementation and instructions for the **KTH Formu
 
 1. Navigate to the Melodic version folder:
 
-```bash
-cd exercise1_melodic
-```
-Pull the Docker image:
+    ```bash
+    cd exercise1_melodic
+    ```
+    Pull the Docker image:
 
-```bash
-docker pull kthfsdv/ros-intro
-```
+    ```bash
+    docker pull kthfsdv/ros-intro
+    ```
     Run the Docker container:
 
 docker run -it \
