@@ -10,6 +10,8 @@ This repository contains the implementation and instructions for the **KTH Formu
 
 ### Setup
 
+Download the _exercise1_melodic_ zip file and decompress it.
+
 Navigate to the Melodic version folder:
 
 ```bash
@@ -30,7 +32,7 @@ docker run -it \
   kthfsdv/ros-intro
 ```
 
-> Note: The DISPLAY environment variable is set to fix GUI issues in Docker.
+> Note: The DISPLAY environment variable is set to resolve GUI issues in Docker. It is also recommended to create all necessary files outside the container, as files created inside may have root-only permissions.
 
 Running ROS Nodes
 
@@ -102,7 +104,9 @@ rostopic echo /kthfs/result
 Due to the limited support for ROS Melodic and the popularity of ROS2 Humble, this repository includes a Docker image with ROS2 Humble.
 Recommended Setup
 
-- Download and open the folder _exercise1_humble_ in Visual Studio Code
+- Download the _exercise1_humble_ zip file and decompress it.
+
+- Open the folder _KTHFS_Humble_ in Visual Studio Code
 
 - Install the Docker Dev Containers extension
 
