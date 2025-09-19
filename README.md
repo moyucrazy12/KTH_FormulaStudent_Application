@@ -102,13 +102,13 @@ rostopic echo /kthfs/result
 Due to the limited support for ROS Melodic and the popularity of ROS2 Humble, this repository includes a Docker image with ROS2 Humble.
 Recommended Setup
 
-    - Download and open the folder exercise1_humble in Visual Studio Code
+- Download and open the folder _exercise1_humble_ in Visual Studio Code
 
-    - Install the Docker Dev Containers extension
+- Install the Docker Dev Containers extension
 
-    - Configure devcontainer.json for desired paths
+- Configure devcontainer.json for desired paths
 
-    - Build and start the container
+- Build and start the container
 
 Running ROS2 Nodes
 
